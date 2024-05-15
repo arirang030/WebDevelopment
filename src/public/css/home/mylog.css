@@ -1,0 +1,63 @@
+#mylog_wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  height: 95vh;
+  margin: 10px 10px 30px 10px;
+  padding: 5px;
+  overflow-y: auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 1;
+  font-size: 12px;
+  border-radius: 10px;
+}
+#mylogList li {
+  list-style: none;
+}
+#mylogList .logItem {
+  position:relative;
+  border-bottom:1px solid #888;
+  overflow: hidden;
+  cursor: pointer;
+  min-height: 65px;
+}
+#mylogList .logItem span {
+  display: block;
+  margin-top:4px;
+}
+#mylogList .logItem h3, 
+#mylogList .logItem .info {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#mylogList .logItem .info{
+  padding:10px 0 10px 55px;
+}
+#mylogList .info .gray {
+  color:#8a8a8a;
+}
+#mylogList .info .jibun {
+  padding-left:26px;
+  background:url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/places_jibun.png) no-repeat;
+}
+#mylogList .info .tel {color:#009900;}
+#mylogList .logItem img {
+  float:left;
+  position:absolute;
+  width:36px;
+  height:37px;
+  margin:10px 0 0 10px;
+}
+#mylogList .logItem .delButton {position: absolute;top: 10px;right: 5px;font-size: 15px;}
+.button_wrap {
+  display: flex;
+  justify-content: space-around;
+}
+#makeRoadButton,
+#reset {
+  margin-top: 7px;
+  font-size: 17px;
+}

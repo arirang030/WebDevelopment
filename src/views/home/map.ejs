@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=02bddbbdebfccf62e54c020ee4c7992f&libraries=services&autoload=false"></script>
+  <script src="../js/home/map.js"></script>
+  <link rel="stylesheet" href="../css/home/menu.css">
+  <link rel="stylesheet" href="../css/home/mylog.css">
+  <title>Make Your Road</title>
+</head>
+<body>
+  <div class="map_wrap">
+    <!-- 지도 생성 -->
+    <div id="map" style="width:100%;height:100vh;position:relative;overflow:hidden;"></div>
+
+    <!-- 검색창 -->
+    <div id="menu_wrap">
+      <div class="option">
+        <div>
+          <input type="text" id="keyword" size="15">
+          <button id="searchButton">검색하기</button>
+        </div>
+      </div>
+      <hr>
+      <ul id="placesList"></ul>
+      <div id="pagination"></div>
+    </div>
+  </div>
+
+  <!-- 경로창 -->
+  <div id="road_wrap">
+    <div>
+
+    </div>
+    <ul id="roadList"></ul>
+  </div>
+
+  <!-- 기록창 -->
+  <div id="mylog_wrap">
+    <!-- 사용자 개인 정보 페이지 -->
+    <div class="mylog_page">
+
+    </div>
+    <!-- 사용자가 추가한 장소와 경로 목록 -->
+    <ul id="mylogList"></ul>
+    <div class="button_wrap">
+      <button id="makeRoadButton">경로 생성하기</button>
+      <button id="reset">초기화</button>
+    </div>
+  </div>
+</body>
+</html>

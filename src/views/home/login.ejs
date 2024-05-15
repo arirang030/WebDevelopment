@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/home/login.css">
+  <script src="/js/home/login.js" defer></script>
+  <title>로그인 페이지</title>
+</head>
+<body>
+  <div class="login_wrap">
+    <h1>Make Your Road</h1>
+    <h4>로그인 후 서비스를 누려보세요!</h4>
+    <form id="login-form">
+      <input type="text" name="userId" id="id" placeholder="아이디">
+      <input type="password" name="userPasswd" id="psword" placeholder="비밀번호">
+      <input type="submit" id="loginBtn" value="Login">
+    </form>
+    <form action="/register" id="join-form">
+      <h5>아직 회원이 아니신가요?</h5>
+      <input type="submit" value="create an account">
+    </form>
+  </div>
+</body>
+</html>
